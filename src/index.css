@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+/* Continuous scrolling animation for the update list */
+@keyframes scrollUp {
+  0% { transform: translateY(100%); }
+  100% { transform: translateY(-100%); }
+}
+
+/* Scroll container moving all items together */
+.scroll-container {
+  animation: scrollUp 20s linear infinite;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Ensures proper spacing */
+}
+
+/* Individual update items */
+.scroll-item {
+  display: block;
+  padding: 8px;
+}
