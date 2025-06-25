@@ -6,7 +6,6 @@ import About from './Components/about';
 import Home from './Components/home';
 import Login from './Components/login';
 import Register from './Components/register';
-import Listcand from './Components/listcand';
 import Terms from './Components/terms';
 import Contact from './Components/contact';
 import Faq from './Components/faq';
@@ -31,14 +30,13 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about-us" element={<About />} />
             <Route path="/contact-us" element={<Contact />} />
-            <Route path="/list-candidate" element={<Listcand />} />
             <Route path="/faqs" element={<Faq />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/terms" element={<Terms />} />
           </Routes>
         </main>
-        <Footer />
+       <Footer />
       </div>
     </Router>
   );
